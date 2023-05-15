@@ -64,14 +64,93 @@
                 </ul>
             </div>
             <div class="d-flex gap-2">
-                <button class="btn btn-danger px-4 py-2 fw-bold fs-7 rounded-5 bg-first border-0">
+                <button data-bs-toggle="modal" data-bs-target="#ModalLogin"
+                    class="btn btn-danger px-4 py-2 fw-bold fs-7 rounded-5 bg-first border-0">
                     Login</button>
-                <button class="btn btn-danger px-4 py-2 fw-bold fs-7 rounded-5 bg-first border-0">
+                <button data-bs-toggle="modal" data-bs-target="#ModalRegister"
+                    class="btn btn-danger px-4 py-2 fw-bold fs-7 rounded-5 bg-first border-0">
                     Register</button>
             </div>
         </div>
     </nav>
     <!-- Navbar end -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="ModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Selamat datang di, <span
+                            class="text-first">Love Buddy</span> </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="mx-2">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold fs-7">Email address<span
+                                        class="text-danger">*</span></label>
+                                <input type="email" placeholder="mail@mail.com" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold fs-7">Password<span
+                                        class="text-danger">*</span></label>
+                                <input type="password" class="form-control" placeholder="password" required>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label fs-7">Ingat Saya</label>
+                            </div>
+                            <button type="submit"
+                                class="btn btn-primary w-100 bg-first border-0 fs-7 fw-bold">Submit</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="ModalRegister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold">Selamat datang di, <span class="text-first">Love Buddy</span>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="mx-2">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold fs-7">Nama Lengkap<span
+                                        class="text-danger">*</span></label>
+                                <input type="name" placeholder="Nama Lengkap" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold fs-7">Email address<span
+                                        class="text-danger">*</span></label>
+                                <input type="email" placeholder="mail@mail.com" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold fs-7">Password<span
+                                        class="text-danger">*</span></label>
+                                <input type="password" class="form-control" placeholder="password" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold fs-7">Ulangi Password <span
+                                        class="text-danger">*</span> </label>
+                                <input type="password" class="form-control" placeholder="password">
+                            </div required>
+                            <button type="submit"
+                                class="btn btn-primary w-100 bg-first border-0 fs-7 fw-bold">Submit</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Hero Section start -->
     <section class="hero vh-100" id="home">
